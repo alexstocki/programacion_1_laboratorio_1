@@ -1,0 +1,37 @@
+# depslib dependency file v1.0
+1524531396 source:d:\alex\simulacroparcial\funciones.c
+	<stdio.h>
+	<stdlib.h>
+	"funciones.h"
+
+1524529957 d:\alex\simulacroparcial\funciones.h
+
+1524531485 source:d:\alex\simulacroparcial\main.c
+	<stdio.h>
+	<stdlib.h>
+	"funciones.h"
+
+1524597344 source:e:\laboratorio y programación i\practicas\simulacroparcial\main.c
+	<stdio.h>
+	<stdlib.h>
+	"funciones.h"
+
+1524517828 e:\laboratorio y programación i\practicas\simulacroparcial\funciones.h
+
+1524597535 source:e:\laboratorio y programación i\practicas\simulacroparcial\funciones.c
+	<stdio.h>
+	<stdlib.h>
+	"funciones.h"
+
+1524789309 source:c:\users\notebook\desktop\alex\practicas c\progmartes\simulacroparcial\main.c
+	<stdio.h>
+	<stdlib.h>
+	"funciones.h"
+
+1524787999 c:\users\notebook\desktop\alex\practicas c\progmartes\simulacroparcial\funciones.h
+
+1524789070 source:c:\users\notebook\desktop\alex\practicas c\progmartes\simulacroparcial\funciones.c
+	<stdio.h>
+	<stdlib.h>
+	"funciones.h"
+
