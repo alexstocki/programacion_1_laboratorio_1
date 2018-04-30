@@ -6,16 +6,22 @@ typedef struct {
     char nombre[50];
     int edad;
     int estado;
-    int dni;
+    char dni[9];
 
-}EPersona;
+}ePersona;
 
-/**
- * Obtiene el primer indice libre del array.
- * @param lista el array se pasa como parametro.
- * @return el primer indice disponible
- */
-int obtenerEspacioLibre(EPersona lista[]);
+int menu();
+int menuModificar();
+void inicioEstado(ePersona variable[],int CANT);
+int buscarEspacio(ePersona variable[],int CANT);
+int buscarPorDni(ePersona lista[],char codigo[],int CANT);
+void alta(ePersona variable[],int CANT);
+void mostrarPersona(ePersona variable);
+void modificar(ePersona variable[],int CANT);
+void baja(ePersona variable[],int CANT);
+void ordenar(ePersona variable[],int CANT);
+void listar(ePersona variable[],int CANT);
+void grafico(ePersona variable[],int CANT);
 
 /**
  * Obtiene el indice que coincide con el dni pasado por parametro.
@@ -23,6 +29,7 @@ int obtenerEspacioLibre(EPersona lista[]);
  * @param dni el dni a ser buscado en el array.
  * @return el indice en donde se encuentra el elemento que coincide con el parametro dni
  */
-int buscarPorDni(EPersona lista[], int dni);
+
+
 
 #endif // FUNCIONES_H_INCLUDED

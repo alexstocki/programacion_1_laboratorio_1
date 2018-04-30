@@ -1,38 +1,66 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
+#include <ctype.h>
 #include "funciones.h"
+#define CANT 20
 
 
 int main()
 {
     char seguir='s';
-    int opcion=0;
+    ePersona persona[CANT];
 
-    while(seguir=='s')
+    do
     {
-        printf("1- Agregar persona\n");
-        printf("2- Borrar persona\n");
-        printf("3- Imprimir lista ordenada por  nombre\n");
-        printf("4- Imprimir grafico de edades\n\n");
-        printf("5- Salir\n");
-
-        scanf("%d",&opcion);
-
-        switch(opcion)
+        system("cls");
+        switch(menu())
         {
             case 1:
-                break;
+                {
+                   system("cls");
+                   fflush(stdin);
+                   alta(persona,CANT);
+                   system("pause");
+                   break;
+                }
             case 2:
-                break;
+                {
+                    system("cls");
+                    fflush(stdin);
+                    baja(persona,CANT);
+                    system("pause");
+                    break;
+                }
             case 3:
-                break;
+                {
+                    system("cls");
+                    fflush(stdin);
+                    modificar(persona,CANT);
+                    system("pause");
+                    break;
+                }
             case 4:
-                break;
+                {
+                    system("cls");
+                    fflush(stdin);
+                    listar(persona,CANT);
+                    system("pause");
+                    break;
+                }
             case 5:
-                seguir = 'n';
-                break;
+                {
+                    grafico(persona,CANT);
+                    system("pause");
+                    break;
+                }
+            case 6:
+                {
+                    seguir='n';
+                    break;
+                }
         }
-    }
+    }while(seguir!='n');
 
     return 0;
 }
